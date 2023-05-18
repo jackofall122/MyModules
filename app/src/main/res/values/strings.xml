@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Modules</string>
+    <string name="androidMod">C346 Android Programming</string>
+    <string name="uiuxmod">C219 UI/UX Design</string>
+    <string name="Java">C208 Object-Oriented Programming</string>
+    <string name="viewButton">View Info</string>
+</resources>
