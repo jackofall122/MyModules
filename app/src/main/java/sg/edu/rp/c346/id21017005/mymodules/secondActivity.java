@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
@@ -11,11 +13,13 @@ import org.w3c.dom.Text;
 public class secondActivity extends AppCompatActivity {
 
     TextView tvDisplay;
+    Button btnBack;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
         tvDisplay = findViewById(R.id.tvDisplayInfo);
+        btnBack = findViewById(R.id.btnBack);
 
         // Receive the serialized intent
         Intent receivedIntent = getIntent();
@@ -37,5 +41,13 @@ public class secondActivity extends AppCompatActivity {
                 "\nModule Credit: "+credit+
                 "\nLecture Venue: "+venue;
         tvDisplay.setText(output);
+
+        // go back to modules page
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 }

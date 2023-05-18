@@ -16,4 +16,11 @@
         android:paddingTop="60dp"
         android:text="TextView"
         android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:text="@string/back" />
 </LinearLayout>

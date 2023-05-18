@@ -4,4 +4,5 @@
     <string name="uiuxmod">C219 UI/UX Design</string>
     <string name="Java">C208 Object-Oriented Programming</string>
     <string name="viewButton">View Info</string>
+    <string name="back">Back</string>
 </resources>
